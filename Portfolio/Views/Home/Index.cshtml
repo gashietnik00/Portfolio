@@ -2,6 +2,15 @@
     ViewData["Title"] = "Home Page";
 }
 
+<style>
+    .introcards {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        padding: 5rem 0px;
+    }
+</style>
 
 <div class="intro">
     <img class="zoom" src="~/img/Etnik Gashi.jpeg" />
@@ -9,9 +18,35 @@
         <h3>Hi, I am <strong>Etnik Gashi</strong></h3>
         <h3>An enthusiast <strong>WEB DEVELOPER</strong></h3>
     </div>
-    <div class="introbtn">
-        <a class="btn line-btn-dark btn-icon btn-radius" id="downloadbtn" href="~/file/CV - Etnik Gashi.pdf" title="" download><button onclick="myFunction()" type="button" class="btn btn-outline-dark">Download CV</button></a>
+
+
+    <div class="introcards">
+        <div class="card text-white bg-dark mb-3" style="width: 21rem; height: 17rem;">
+            <div class="card-header"><h2><strong>ABOUT ME</strong></h2></div>
+            <div class="card-body">
+                <p class="card-text">I am a highly motivated student of Computer Science and Engineering degree in <strong>University of Bussines and Technology</strong></p>
+                <p class="card-text">For now, I am working as an Intern Web Developer for a company named <strong>StarLabs</strong> that offers high quality ICT outsourcing services</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-dark mb-3" style="width: 21rem; height: 17rem;">
+            <div class="card-header"><h2><strong>EDUCATION</strong></h2></div>
+            <div class="card-body">
+
+                <p class="card-text">
+                    "Meto Bajraktari" Elementary School
+                </p>
+                <p class="card-text">
+                    "Sami Frasheri" High School
+                </p>
+                <p class="card-text">
+                    University of Bussines and Technology - UBT
+                </p>
+            </div>
+        </div>
     </div>
+
+
 </div>
 
 
@@ -22,5 +57,9 @@
 <div class="projects">
     <h4>TO STAY UPDATED WITH MY PROJECTS, ADD ME IN:</h4>
     <h1><a href="https://github.com/gashietnik00"><strong>GITHUB</strong></a></h1>
+    <div class="introbtn">
+        <a class="btn line-btn-dark btn-icon btn-radius" id="downloadbtn" href="~/file/CV - Etnik Gashi.pdf" title="" download><button onclick="myFunction()" type="button" class="btn btn-outline-dark">Download CV</button></a>
+    </div>
 </div>
+
 

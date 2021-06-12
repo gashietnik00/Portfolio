@@ -71,7 +71,6 @@ body {
 }
 
 .footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
     white-space: nowrap;
@@ -109,7 +108,7 @@ body {
 
 .intro {
     margin: 0;
-    padding-top: 40px;
+    padding: 10px;
     display: block;
     text-align: center;
     align-items: center;
@@ -126,8 +125,6 @@ body {
 }
 
 .projects {
-    margin-top: 5em;
-    padding-top: 15px;
     display: block;
     text-align: center;
     align-items: center;
@@ -135,13 +132,11 @@ body {
 
     .projects a:hover {
         color: black;
-        font-size: 50px;
-        transition: 0.2s;
         text-decoration: none;
     }
 
     .projects a {
-        color: black;
+        color: darkgrey;
         text-decoration: none;
     }
 
@@ -156,3 +151,9 @@ body {
     .zoom:hover {
         transform: scale(1.5);
     }
+
+
+.introbtn {
+    align-items: center;
+    text-align: center;
+}
