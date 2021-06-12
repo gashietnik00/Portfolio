@@ -6,43 +6,62 @@
     <title>@ViewData["Title"] - Portfolio</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+                <h1>Portfolio</h1>
+                <div class="headimgs-div">
+                    <a href="https://www.instagram.com/gashietnik00"><img src="https://brandslogo.net/wp-content/uploads/2016/06/Instagram-logo.png" id="headimg" /></a>
+                    <a href="https://www.facebook.com/gashietnik00"><img src="https://cdn.worldvectorlogo.com/logos/facebook-3-2.svg" id="headimg" /></a>
+                    <a href="https://github.com/gashietnik00"><img src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png" id="headimg" /></a>
+                    <a href="mailto:gashietnik00@gmail.com"><img src="https://cdn3.iconfinder.com/data/icons/user-interface-web-1/550/web-circle-circular-round_67-512.png" id="headimg" /></a>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+
+    <div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - Portfolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="footer-div">
+            <div class="footer-about-div">
+                <h3>I am Etnik Gashi.</h3>
+                <h6>
+                    I am a highly motivated student of Computer Science and Engineering degree in University of Bussines and Technology.
+                </h6>
+                <h6>
+                    For now, I am working as an Intern Web Developer for a company named StarLabs that offers high quality ICT outsourcing services.
+                </h6>
+            </div>
+
+            <div class="footer-contact-div">
+                <h4>You can find me in these links below:</h4>
+                <a href="https://www.instagram.com/gashietnik00"><img src="https://brandslogo.net/wp-content/uploads/2016/06/Instagram-logo.png" id="headimg" /></a>
+                <a href="https://www.facebook.com/gashietnik00"><img src="https://cdn.worldvectorlogo.com/logos/facebook-3-2.svg" id="headimg" /></a>
+                <a href="https://github.com/gashietnik00"><img src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png" id="headimg" /></a>
+                <a href="mailto:gashietnik00@gmail.com"><img src="https://cdn3.iconfinder.com/data/icons/user-interface-web-1/550/web-circle-circular-round_67-512.png" id="headimg" /></a>
+            </div>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+            alert("You just downloaded my CV!");
+        }
+    </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
